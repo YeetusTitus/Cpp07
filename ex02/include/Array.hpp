@@ -6,7 +6,7 @@
 /*   By: jforner <jforner@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 09:06:41 by jforner           #+#    #+#             */
-/*   Updated: 2022/08/23 10:52:26 by jforner          ###   ########.fr       */
+/*   Updated: 2022/08/23 17:00:34 by jforner          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,8 +56,11 @@ public:
 
 	Array& operator=(const Array &copy)
 	{
+		delete ar;
 		len = copy.len;
-		ar = copy.ar;
+		ar = new T[len];
+		for(unsigned int i = 0; i < len; i++)
+			ar[i] = copy.ar[i];
 		std::cout << "Array copied!" << std::endl;
 		return *this;
 	}
