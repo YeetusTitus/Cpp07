@@ -6,7 +6,7 @@
 /*   By: jforner <jforner@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/19 13:28:44 by jforner           #+#    #+#             */
-/*   Updated: 2022/08/19 16:01:21 by jforner          ###   ########.fr       */
+/*   Updated: 2022/08/23 11:12:50 by jforner          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,10 +48,10 @@ int main(void)
     std::string	str[] = {"square" , "dot" , "triangle", "diamond"};
     int			in[] = {42, 15, 21, 1337};
     std::cout << "String display :" << std::endl;
-    ::iter( str, 4, displayStr);
+    iter( str, 4, displayStr);
     std::cout << "Int display :" << std::endl;
-    ::iter( in, 4, displayInt);
+    iter( in, 4, displayInt);
     std::cout << "Awesome display :" << std::endl;
-    ::iter( tab, 5, print);
+    iter( tab, 5, print);
     return 0;
 }

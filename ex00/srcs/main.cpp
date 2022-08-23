@@ -6,7 +6,7 @@
 /*   By: jforner <jforner@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/19 13:28:44 by jforner           #+#    #+#             */
-/*   Updated: 2022/08/19 16:53:28 by jforner          ###   ########.fr       */
+/*   Updated: 2022/08/23 11:14:07 by jforner          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,9 @@ int main(void)
 
 
 
-    ::swap(a,b);
-    ::swap(i,j);
-    ::swap(x,y);
+    swap(a,b);
+    swap(i,j);
+    swap(x,y);
 
     std::cout << a << std::endl;
     std::cout << b << std::endl;
